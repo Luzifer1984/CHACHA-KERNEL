@@ -7,17 +7,7 @@ for HTC Marvel/MarvelC / HTC Aria / HTC ChaCha / HTC Legend
 
 Changelog:
 ===========
-- Update ADSP driver
-- Update KGSL from Kernel 3.x
-- Backport lowmemorykiller from Kernel 3.4
-- Backport UHID driver from Kernel 3.8
-- Backported console module  from Kernel 3.0
-- Backported backlight module from Kernel 3.0
-- Add PCM-WB support for VoIP
-- Enable SRS Post processing
-- Fix YouTube [LQ/HQ]
-- Fix Bluetooth Tethering
-
+-Add "zen" I/O scheudler
 
 Configs:
 ===========
@@ -59,7 +49,8 @@ Schedulers:
 - CFQ
 - BFQ
 - VR
-- SIO [Default]
+- SIO 
+- ZEN [Default]
 
 Other Features:
 ==========
@@ -75,6 +66,7 @@ Other Features:
 
 Credits:
 ===========
+- Jdevs  
 - Andreas Schneider (Cryptomilk from based)
 - eoghan2t9
 
