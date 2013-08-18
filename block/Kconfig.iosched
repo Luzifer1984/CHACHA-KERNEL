@@ -83,6 +83,10 @@ config CGROUP_BFQIO
 	  filesystem interface.  The name of the subsystem will be
 	  bfqio.
 
+config IOSCHED_ZEN
+	tristate "ZEN I/O scheduler"
+	default y
+	  
 choice
 	prompt "Default I/O scheduler"
 	default DEFAULT_CFQ
@@ -101,7 +105,10 @@ choice
 
 	config DEFAULT_SIO
 		bool "SIO" if IOSCHED_SIO=y
-
+    
+    config DEFAULT_ZEN
+        bool "ZEN" if IOSCHED_ZEN=y
+	
 	config DEFAULT_BFQ
 		bool "BFQ" if IOSCHED_BFQ=y
 
@@ -118,7 +125,8 @@ config DEFAULT_IOSCHED
 	default "sio" if DEFAULT_SIO
 	default "noop" if DEFAULT_NOOP
 	default "vr" if DEFAULT_VR
-
+    default "zen" if DEFAULT_ZEN
+	
 endmenu
 
 endif
