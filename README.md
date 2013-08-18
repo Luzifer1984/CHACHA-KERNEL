@@ -7,7 +7,8 @@ for HTC Marvel/MarvelC / HTC Aria / HTC ChaCha / HTC Legend
 
 Changelog:
 ===========
--Add "zen" I/O scheudler
+-Add "zen" I/O scheudler and set as default
+-Set smartassv2 as default
 
 Configs:
 ===========
@@ -28,8 +29,8 @@ Features:
 - Lazy
 - Brazilionwax
 - Smartass
-- SmartassV2
-- SmartassH3 [Default]
+- SmartassV2 [Default]
+- SmartassH3 
 - Minmax
 - Smoothass
 - Savagedzen
