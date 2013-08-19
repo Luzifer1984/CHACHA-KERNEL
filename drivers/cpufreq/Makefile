@@ -18,6 +18,7 @@ obj-$(CONFIG_CPU_FREQ_GOV_SCARY)	+= cpufreq_scary.o
 obj-$(CONFIG_CPU_FREQ_GOV_MINMAX)	+= cpufreq_minmax.o
 obj-$(CONFIG_CPU_FREQ_GOV_SMARTASS)	+= cpufreq_smartass.o
 obj-$(CONFIG_CPU_FREQ_GOV_SMARTASS2)	+= cpufreq_smartass2.o
+obj-$(CONFIG_CPU_FREQ_GOV_ZEN) += cpufreq_zen.o
 obj-$(CONFIG_CPU_FREQ_GOV_SMARTASSH3)   += cpufreq_smartassH3.o
 obj-$(CONFIG_CPU_FREQ_GOV_BRAZILIANWAX)	+= cpufreq_brazilianwax.o
 obj-$(CONFIG_CPU_FREQ_GOV_LAZY)	        += cpufreq_lazy.o

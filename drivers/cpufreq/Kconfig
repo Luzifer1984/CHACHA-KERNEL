@@ -99,6 +99,12 @@ config CPU_FREQ_DEFAULT_GOV_ONDEMAND
 	  governor. If unsure have a look at the help section of the
 	  driver. Fallback governor will be the performance governor.
 
+config CPU_FREQ_DEFAULT_GOV_ZEN
+  bool "Zen"
+  select CPU_FREQ_GOV_ZEN	  
+  help
+    Use the CPUFreq governor 'zen' as default.
+	
 config CPU_FREQ_DEFAULT_GOV_ONDEMANDX
 	bool "ondemandx"
 	select CPU_FREQ_GOV_ONDEMANDX
@@ -548,5 +554,12 @@ config CPU_FREQ_GOV_SLEEPY
           'sleepy' - an "ondemandx" based tweaked, smart and smooth optimized governor!
  
           If in doubt, say Y.
-
+		  
+config CPU_FREQ_GOV_ZEN
+  tristate "'zen' cpufreq governor"
+   depends on CPU_FREQ
+   help
+     'Zen' - a "smartassV2" based governor
+      If in doubt, say N.
+	  
 endif	# CPU_FREQ
