@@ -9,6 +9,8 @@ Changelog:
 ===========
 -Add "zen" I/O scheudler and set as default
 -Set smartassv2 as default
+-Optimize smartassh3, smartassv2 and interactive governor
+-optimize deadline i/o scheudler
 
 Configs:
 ===========
@@ -72,4 +74,4 @@ Credits:
 - eoghan2t9
 
 ==============
-                                                by OWL Project [Based on CRYPTOMILK Kernel]
+                                                by Marvellous team (Kevinjoa) [Based on CRYPTOMILK Kernel and OWL-Predator-Kernel]
