@@ -7,10 +7,14 @@ for HTC Marvel/MarvelC / HTC Aria / HTC ChaCha / HTC Legend
 
 Changelog:
 ===========
--Add "zen" I/O scheudler and set as default
--Set smartassv2 as default
--Optimize smartassh3, smartassv2 and interactive governor
--optimize deadline i/o scheudler
+- Add "zen" I/O scheudler and set as default
+- Set smartassv2 as default
+- Optimize smartassh3, smartassv2 and interactive governor
+- Optimize deadline i/o scheudler
+- Time Gpio from kernel 3.8 (backport)
+- Memory tweaks
+- Removed unnecessary things for saving battery
+
 
 Configs:
 ===========
