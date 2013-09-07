@@ -721,6 +721,23 @@ char * board_get_mfg_sleep_gpio_table(void)
 }
 EXPORT_SYMBOL(board_get_mfg_sleep_gpio_table);
 
+static char *qwerty_color_tag = NULL;
+static int __init board_set_qwerty_color_tag(char *get_qwerty_color)
+{
+	if (strlen(get_qwerty_color))
+		qwerty_color_tag = get_qwerty_color;
+	else
+		qwerty_color_tag = NULL;
+	return 1;
+}
+__setup("androidboot.qwerty_color=", board_set_qwerty_color_tag);
+
+void board_get_qwerty_color_tag(char **ret_data)
+{
+	*ret_data = qwerty_color_tag;
+}
+EXPORT_SYMBOL(board_get_qwerty_color_tag);
+
 static char *emmc_tag;
 static int __init board_set_emmc_tag(char *get_hboot_emmc)
 {
