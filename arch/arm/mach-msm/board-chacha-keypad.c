@@ -228,9 +228,9 @@ static struct platform_device chacha_reset_keys_device = {
 };
 
 char *SKU_WWE = "(HTC__001),(HTC__016),(HTC__032),(VIRGI001),(HTC__E11),(HTC__038),"\
-		"(H3G__001),(O2___001),(ORANG001),(ORANGB10),(T-MOB005),(VODAP001),(VODAPE17),(VODAP006),(HTC__N34)";
+		"(H3G__001),(O2___001),(ORANG001),(ORANGB10),(T-MOB005),(VODAP001),(VODAPE17)";
 char *SKU_ELL = "(VODAP006)";
-char *SKU_FRA = "(HTC__203),(HTC__247),(ORANG202),(VODAP203),(VODAP204)";
+char *SKU_FRA = "(HTC__203),(HTC__247),(ORANG202),(VODAP203)";
 char *SKU_ARA = "(HTC__J15)";
 char *SKU_ESN = "(HTC__304),(VODAP304),(VODAPD18),(BSTAR301),(ORANG309)";
 char *SKU_GER = "(HTC__102),(O2___102),(ORANG216),(VODAP102),(VODAP110),(VODAP120)";
@@ -243,7 +243,7 @@ char *SKU_BOPOMO = "(HTC__621)";
 char *SKU_CN = "HTCCN701";
 char *SKU_AW = "(CWS__001)";
 char *SKU_THAI= "(HTC__053)";
-char *SKU_STROKE_ENG = "(HTC__044),(HTC__622)";
+char *SKU_STROKE_ENG = "(HTC__044)";
 
 int __init chacha_init_keypad(void)
 {
